@@ -6,5 +6,5 @@
 
 DIR=$(cd "$(dirname "$0")" && pwd)
 
-sudo pacman -S $(< $DIR/arch-deps.txt)
+sudo pacman -S --noconfirm $(< $DIR/arch-deps.txt)
 
