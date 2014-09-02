@@ -1,3 +1,6 @@
 grc
 ack
 python
+python-pip
+zsh
+vim
