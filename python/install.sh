@@ -1,1 +1,1 @@
-easy_install SpoofMAC
+# easy_install and pip install here
