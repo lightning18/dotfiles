@@ -1,24 +1,13 @@
 'editor':
   'showIndentGuide': true
-  'fontFamily': 'Menlo'
-  'fontSize': 15
+  'fontFamily': 'Source Code Pro'
 'core':
-  'excludeVcsIgnoredPaths': true
-  'ignoredNames': [
-    '.bundle'
-    '.git'
-    'log'
-    'repositories'
-    'tmp'
-    'vendor'
-  ]
   'themes': [
-    'unity-ui'
-    'glacier-syntax'
+    'polychrome-ui'
+    'polychrome-syntax'
   ]
   'hideGitIgnoredFiles': true
   'disabledPackages': [
-    'background-tips'
     'exception-reporting'
     'metrics'
   ]
@@ -30,6 +19,3 @@
   ]
 'welcome':
   'showOnStartup': false
-'release-notes':
-  'viewedVersion': '0.89.0'
-'tree-view': {}
