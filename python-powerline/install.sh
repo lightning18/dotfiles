@@ -13,3 +13,8 @@ curl -L -o $HOME/.fonts/PowerlineSymbols.otf \
 mkdir -p $HOME/.config/fontconfig/conf.d/
 curl -L -o $HOME/.config/fontconfig/conf.d/10-powerline-symbols.conf \
   https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
+
+# Install powerline-daemon service (not enabled)
+mkdir -p $HOME/.config/systemd/user/
+cp $(dirname "$0")/powerline-daemon.service \
+  $HOME/.config/systemd/user/powerline-daemon.service

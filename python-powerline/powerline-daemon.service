@@ -1,0 +1,9 @@
+[Unit]
+Description=Powerline Daemon
+
+[Service]
+ExecStart=/usr/bin/python %h/.local/bin/powerline-daemon -f
+ExecStop=/usr/bin/python %h/.local/bin/powerline-daemon -k
+
+[Install]
+WantedBy=default.target
