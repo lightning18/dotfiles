@@ -1,21 +1,37 @@
-'editor':
-  'showIndentGuide': true
-  'fontFamily': 'Source Code Pro'
-'core':
-  'themes': [
-    'polychrome-ui'
-    'polychrome-syntax'
-  ]
-  'hideGitIgnoredFiles': true
-  'disabledPackages': [
-    'exception-reporting'
-    'metrics'
-  ]
-'spell-check':
-  'grammars': [
-    'text.plain'
-    'source.gfm'
-    'text.git-commit'
-  ]
-'welcome':
-  'showOnStartup': false
+'global':
+  'exception-reporting':
+    'userId': 'cc261438-6a24-3947-827f-bb176919f5a3'
+  'welcome':
+    'showOnStartup': false
+  'metrics':
+    'userId': '1d250060-4089-4001-bc7a-8d2a98a4bb9f'
+  'editor':
+    'fontFamily': 'Meslo LG M DZ for Powerline'
+    'tabLength': 4
+    'invisibles': {}
+  'core':
+    'themes': [
+      'polychrome-ui'
+      'polychrome-syntax'
+    ]
+    'disabledPackages': [
+      'vim-mode'
+      'autocomplete-jedi'
+      'metrics'
+    ]
+    'autoHideMenuBar': true
+  'atom-beautify':
+    '_analyticsUserId': 'e488e00b-bb11-4308-8656-98cd6f3b19d3'
+    'analytics': false
+  'terminal-status':
+    'WindowHeight': 100
+  'jshint':
+    'supportLintingJsx': true
+  'react':
+    'jsxTagStartPattern': '(?x)((^|=|return)\\s*<([^!/?](?!.+?(</.+?>))))'
+    'jsxComplexAttributePattern': '(?x)\\{ [^}"\']* $|\\( [^)"\']* $'
+    'decreaseIndentForNextLinePattern': '/>\\s*,?\\s*$'
+  'linter': {}
+'.json.source':
+  'editor':
+    'tabLength': 2
