@@ -86,7 +86,8 @@ source $ZSH/oh-my-zsh.sh
 #
 
 # shortcut to this dotfiles path is $DOTFILES
-export DOTFILES=$HOME/.dotfiles
+# get this script's parent dir
+export DOTFILES=`dirname $0:A`
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/dev
@@ -105,13 +106,19 @@ config_files=($DOTFILES/**/*.zsh)
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}
 do
-  source $file
+  if [[ ! -f `dirname $file`/.disable ]]
+  then
+    source $file
+  fi
 done
 
 # load everything but the path and completion files
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
 do
-  source $file
+  if [[ ! -f `dirname $file`/.disable ]]
+  then
+    source $file
+  fi
 done
 
 # initialize autocomplete here, otherwise functions won't be loaded
@@ -121,7 +128,10 @@ compinit
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
 do
-  source $file
+  if [[ ! -f `dirname $file`/.disable ]]
+  then
+    source $file
+  fi
 done
 
 unset config_files
