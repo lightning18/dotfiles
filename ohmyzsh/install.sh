@@ -6,5 +6,5 @@
 
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     curl -L http://install.ohmyz.sh | sh
-    rm $HOME/.zshrc
+    mv $HOME/.zshrc $HOME/.zshrc.pre-dotfiles
 fi

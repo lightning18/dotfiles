@@ -1,2 +1,2 @@
-export PATH="/usr/local/bin:/usr/local/sbin:$DOTFILES/bin:$PATH"
+export PATH="$DOTFILES/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"

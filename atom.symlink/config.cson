@@ -8,7 +8,6 @@
   'editor':
     'fontFamily': 'Meslo LG M DZ for Powerline'
     'tabLength': 4
-    'invisibles': {}
   'core':
     'themes': [
       'polychrome-ui'
