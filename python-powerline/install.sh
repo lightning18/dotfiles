@@ -1,6 +1,8 @@
+#!/usr/bin/env zsh
 #
 # Powerline
 #
+
 # Install powerline from git using pip (local)
 #
 pip install --user --upgrade git+git://github.com/Lokaltog/powerline
@@ -18,3 +20,9 @@ curl -L -o $HOME/.config/fontconfig/conf.d/10-powerline-symbols.conf \
 mkdir -p $HOME/.config/systemd/user/
 cp $(dirname "$0")/powerline-daemon.service \
   $HOME/.config/systemd/user/powerline-daemon.service
+
+
+# Initally skipped by zsh, remove .disabled after install to enable
+touch `dirname $0:A`/.disable
+echo "Powerline is disabled by default, remove .disable to enable"
+
