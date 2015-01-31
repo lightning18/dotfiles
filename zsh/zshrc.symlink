@@ -3,7 +3,7 @@
 #
 
 # shortcut to this dotfiles path is $DOTFILES
-# get this script's parent dir
+# set where the dotfiles repo is cloned, edit accordingly
 export DOTFILES=~/dotfiles
 
 # your project folder that we can `c [tab]` to

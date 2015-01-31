@@ -3,4 +3,4 @@ ack
 python
 python-pip
 zsh
-vim
+vim-python3
