@@ -1,37 +1,43 @@
-'global':
-  'exception-reporting':
-    'userId': 'cc261438-6a24-3947-827f-bb176919f5a3'
-  'welcome':
-    'showOnStartup': false
-  'metrics':
-    'userId': '1d250060-4089-4001-bc7a-8d2a98a4bb9f'
-  'editor':
-    'fontFamily': 'Meslo LG M DZ for Powerline'
-    'tabLength': 4
-    'showInvisibles': true
-  'core':
-    'themes': [
-      'polychrome-ui'
-      'polychrome-syntax'
+"*":
+  "exception-reporting":
+    userId: "cc261438-6a24-3947-827f-bb176919f5a3"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "1d250060-4089-4001-bc7a-8d2a98a4bb9f"
+  editor:
+    fontFamily: "Meslo LG M DZ for Powerline"
+    tabLength: 4
+  core:
+    themes: [
+      "seti-ui"
+      "seti-syntax"
     ]
-    'disabledPackages': [
-      'vim-mode'
-      'autocomplete-jedi'
-      'metrics'
+    disabledPackages: [
+      "vim-mode"
+      "autocomplete-jedi"
+      "metrics"
     ]
-    'autoHideMenuBar': true
-  'atom-beautify':
-    '_analyticsUserId': 'e488e00b-bb11-4308-8656-98cd6f3b19d3'
-    'analytics': false
-  'terminal-status':
-    'WindowHeight': 100
-  'jshint':
-    'supportLintingJsx': true
-  'react':
-    'jsxTagStartPattern': '(?x)((^|=|return)\\s*<([^!/?](?!.+?(</.+?>))))'
-    'jsxComplexAttributePattern': '(?x)\\{ [^}"\']* $|\\( [^)"\']* $'
-    'decreaseIndentForNextLinePattern': '/>\\s*,?\\s*$'
-  'linter': {}
-'.json.source':
-  'editor':
-    'tabLength': 2
+    autoHideMenuBar: true
+  "atom-beautify":
+    _analyticsUserId: "e488e00b-bb11-4308-8656-98cd6f3b19d3"
+    analytics: false
+    js_indent_size: 2
+  "terminal-status":
+    WindowHeight: 100
+  jshint:
+    supportLintingJsx: true
+  react:
+    jsxTagStartPattern: "(?x)((^|=|return)\\s*<([^!/?](?!.+?(</.+?>))))"
+    jsxComplexAttributePattern: "(?x)\\{ [^}\"']* $|\\( [^)\"']* $"
+    decreaseIndentForNextLinePattern: "(?x) />\\s*(,|;)?\\s*$ | ^\\s*\\S+.*</[-_\\.A-Za-z0-9]+>$"
+  linter: {}
+".coffee.source":
+  editor:
+    tabLength: 2
+".json.source":
+  editor:
+    tabLength: 2
+".js.source":
+  editor:
+    tabLength: 2
