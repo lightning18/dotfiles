@@ -8,3 +8,7 @@ then
   alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
+
+# pbcopy
+alias pbcopy="tr -d \'\n\' | xsel --clipboard --input"
+alias pbpaste='xsel --clipboard --output'
