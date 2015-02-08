@@ -16,8 +16,10 @@ antigen use oh-my-zsh
 
 antigen bundles <<EOBUNDLES
   git
+  pip
   heroku
   command-not-found
+  sudo
 
 #  nicoulaj's moar completion files for zsh
   zsh-users/zsh-completions src
